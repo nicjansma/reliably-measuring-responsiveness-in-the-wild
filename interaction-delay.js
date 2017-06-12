@@ -26,6 +26,9 @@
 
         // Capture all LongTasks for now
         longTasks = longTasks.concat(entries);
+
+        // Only keep last 50 entries
+        longTasks = longTasks.slice(0, 50);
     });
 
     // Listen for new entries
